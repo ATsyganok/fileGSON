@@ -5,7 +5,8 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String filename = "./config.txt";
+        //String filename = "./config.txt"; // simple path
+        String fileName = ".\\config.txt"; // absolut path!!!
         File file = new File(filename);
         Gson gson = new Gson();
         JsonReader reader = new JsonReader(new FileReader(file));
